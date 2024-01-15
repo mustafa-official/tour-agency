@@ -296,10 +296,83 @@ input::placeholder {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.destination-main-img-item img{
+
+.destination-main-img-item img {
     width: 100%;
     display: block;
 }
+
+
+/* choose-section */
+
+.choose-section-title {
+    color: #131318;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 25px;
+}
+
+.choose-description {
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 16px;
+    line-height: 26px;
+    max-width: 640px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.choose-item-title {
+    color: #131318;
+    font-size: 24px;
+    font-weight: 800;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.choose-item-description {
+    color: #5A5A5D;
+    font-size: 16px;
+    line-height: 26px;
+
+}
+
+.choose-item {
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+    padding: 30px;
+}
+
+.choose-section-main-item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 45px;
+
+}
+
+.choose-last-item .choose-item {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
+.choose-item2 {
+    border-radius: 16px;
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+}
+
+.choose-item3 {
+    border-radius: 16px;
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+}
+
+
+/* newsletter-section */
 
 
 
@@ -336,6 +409,7 @@ input::placeholder {
         font-size: 15px;
         padding: 0 20px;
     }
+    .choose-section,
     .destination-section,
     .banner-section {
         padding: 0 20px;
@@ -351,30 +425,48 @@ input::placeholder {
         width: 100%;
         object-fit: cover;
     }
-    .destination-img{
+
+    .destination-img {
         flex-direction: column;
+    }
+    .banner-title,
+    .popular-title,
+    .destination-title,
+    .choose-section-title{
+        font-size: 30px;
+    }
+    .choose-section-main-item{
+        grid-template-columns: 1fr;
+    }
+    .choose-last-item .choose-item{
+        width: 100%;
     }
 
 }
 
 
 @media screen and (min-width: 600px) and (max-width: 1200px) {
+    .choose-section,
     .destination-section,
     .popular-section,
     .banner-section,
-    header{
+    header {
         padding: 0 30px;
     }
-    form{
+
+    form {
         margin: 0px 65px;
     }
-    .popular-section{
+
+    .popular-section {
         text-align: center;
     }
-    .popular-main-item{
+
+    .popular-main-item {
         flex-direction: column;
     }
-    .popular-main-item ul li{
+
+    .popular-main-item ul li {
         list-style: none;
     }
 }
