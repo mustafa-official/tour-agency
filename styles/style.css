@@ -1,0 +1,241 @@
+/* mulish-font */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800;900;1000&display=swap');
+/* inter-font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+/* font-family: 'Inter', sans-serif; */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+}
+
+section {
+    margin-top: 80px;
+}
+
+/* header-section */
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.site-logo-name {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.site-logo-name a {
+    text-decoration: none;
+}
+
+ul {
+    display: flex;
+    gap: 45px;
+}
+
+.site-name {
+    color: #131318;
+    font-size: 36px;
+    font-weight: 800;
+}
+
+.agency {
+    color: #FF5400;
+}
+
+ul li {
+    list-style: none;
+
+}
+
+ul li a {
+    text-decoration: none;
+    color: #424247;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.home {
+    color: #FF5400;
+    font-weight: 700;
+}
+
+.menubar {
+    display: none;
+    text-decoration: none;
+
+}
+
+/* banner-section */
+
+.banner-section {
+    margin-top: 45px;
+}
+
+.banner-section .container {
+    background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url('../images/Group13.png');
+    padding: 100px 0;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+}
+
+.banner-heading-item {
+    max-width: 670px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.banner-title {
+    color: #FFF;
+    font-size: 64px;
+    font-weight: 800;
+}
+
+.banner-description {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-top: 25px;
+    margin-bottom: 45px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(4, 170px);
+    justify-content: center;
+    column-gap: 25px;
+    border-radius: 8px;
+    padding: 15px 0;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.30);
+    margin: 0 190px;
+}
+
+form input,
+select {
+    width: 100%;
+    padding: 17px 0px 17px 15px;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    background: #FFF;
+}
+
+form select {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 12px;
+    color: rgba(19, 19, 24, 0.50);
+    font-size: 16px;
+    -webkit-appearance: none;
+    appearance: none;
+
+}
+
+.when {
+    position: relative;
+}
+
+.when::after {
+    position: absolute;
+    content: '';
+    background: url('../icons/arrow.svg');
+    width: 24px;
+    height: 24px;
+    transform: translateY(50%);
+    right: 12px;
+}
+
+.select-type {
+    position: relative;
+}
+
+.select-type::after {
+    position: absolute;
+    content: '';
+    background: url('../icons/arrow.svg');
+    width: 24px;
+    height: 24px;
+    transform: translateY(50%);
+    right: 12px;
+}
+
+input::placeholder {
+    color: rgba(19, 19, 24, 0.50);
+    font-size: 16px;
+}
+
+.find-now button {
+    width: 100%;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 700;
+    background: #FF5400;
+    padding: 15px 0;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+
+}
+
+.fa-magnifying-glass {
+    margin-right: 5px;
+}
+
+
+
+
+
+/* responsive */
+
+@media screen and (max-width: 600px) {
+    header ul {
+        display: none;
+    }
+
+    .menubar {
+        display: block;
+    }
+
+    form {
+        grid-template-columns: 1fr;
+        padding: 20px 30px;
+        row-gap: 20px;
+        background: rgba(255, 255, 255, 0.30);
+        margin: 0 25px;
+    }
+
+    .banner-title {
+        font-size: 40px;
+        padding: 0 20px;
+
+    }
+
+    .banner-description {
+        font-size: 15px;
+        padding: 0 20px;
+    }
+
+    .banner-section {
+        padding: 0 20px;
+    }
+
+}
+
+
+@media screen and (min-width: 600px) and (max-width: 992px) {}
