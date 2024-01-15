@@ -114,7 +114,7 @@ header ul li a {
     margin-bottom: 45px;
 }
 
-form {
+.banner-section form {
     display: grid;
     grid-template-columns: repeat(4, 170px);
     justify-content: center;
@@ -126,7 +126,7 @@ form {
     margin: 0 190px;
 }
 
-form input,
+.banner-section form input,
 select {
     width: 100%;
     padding: 17px 0px 17px 15px;
@@ -136,7 +136,7 @@ select {
     background: #FFF;
 }
 
-form select {
+.banner-section form select {
     padding-top: 15px;
     padding-bottom: 15px;
     padding-right: 12px;
@@ -175,7 +175,7 @@ form select {
     right: 12px;
 }
 
-input::placeholder {
+.banner-section input::placeholder {
     color: rgba(19, 19, 24, 0.50);
     font-size: 16px;
 }
@@ -374,6 +374,172 @@ input::placeholder {
 
 /* newsletter-section */
 
+.newsletter-main-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.newsletter-title {
+    color: #131318;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.newsletter-description {
+    color: #5A5A5D;
+    font-size: 16px;
+    line-height: 26px;
+    max-width: 350px;
+    margin-top: 15px;
+}
+
+.newsletter-line {
+    border: none;
+    height: 1px;
+    background: rgba(19, 19, 24, 0.10);
+    margin: 25px 0;
+}
+
+.newsletter-section input {
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+    border: none;
+    padding: 15px 0 15px 20px;
+    margin-bottom: 15px;
+}
+
+.newsletter-section input:focus {
+    outline: none;
+}
+
+.newsletter-section form {
+    max-width: 390px;
+}
+
+.newsletter-section form input::placeholder {
+    color: rgba(19, 19, 24, 0.30);
+    font-size: 16px;
+
+}
+
+.newsletter-section button {
+    width: 100%;
+    padding: 15px 0;
+    border: none;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 800;
+    border-radius: 8px;
+    background: #FF5400;
+    cursor: pointer;
+}
+
+.newsletter-content {
+    border-radius: 16px;
+    border: 1px solid #FF5400;
+    padding: 40px 50px;
+}
+
+/* .save {
+	border-radius: 16px;
+	background: #FF5400;
+	padding: 15px;
+	width: 320px;
+	position: absolute;
+	bottom: 62px;
+	transform: rotate(-25deg);
+	left: 348px;
+}
+
+.travel-dot-com {
+    color: #FFF;
+    text-align: center;
+    font-size: 24px;
+}
+
+.save-up {
+    color: #FFF;
+    font-size: 32px;
+    font-weight: 800;
+    text-align: center;
+} */
+.newsletter-img {
+    position: relative;
+}
+
+.newsletter-img img {
+    width: 100%;
+    display: block;
+}
+
+
+/* footer-section */
+
+footer {
+    background: rgba(19, 19, 24, 0.05);
+    margin-top: 80px;
+}
+footer .container{
+    padding: 80px 0;
+}
+
+.footer-site-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+
+}
+
+.footer-site-logo a {
+    text-decoration: none;
+}
+
+.footer-site-logo .site-name {
+    font-size: 32px;
+}
+
+.footer-description {
+    max-width: 765px;
+    margin: 0 auto;
+    text-align: center;
+    color: #5A5A5D;
+    font-size: 16px;
+    line-height: 26px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+footer .fa-brands {
+    font-size: 25px;
+    color: #131318;
+}
+
+.footer-socail-icon {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.footer-line {
+    border: none;
+    height: 1px;
+    background: rgba(19, 19, 24, 0.10);
+    margin:50px auto;
+    max-width: 870px;
+}
+
+.copyright {
+    color: #131318;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+}
+
+
 
 
 /* responsive */
@@ -387,16 +553,21 @@ input::placeholder {
         display: block;
     }
 
-    header nav {
-        padding: 0 20px;
+    header .site-name {
+        font-size: 25px;
     }
 
-    form {
+    header nav {
+        padding: 0 20px;
+        margin-top: 30px;
+    }
+
+    .banner-section form {
         grid-template-columns: 1fr;
-        padding: 20px 30px;
-        row-gap: 20px;
-        background: rgba(255, 255, 255, 0.30);
-        margin: 0 25px;
+        width: 70%;
+        margin: 0 auto;
+        padding: 10px 10px;
+        gap: 15px;
     }
 
     .banner-title {
@@ -409,9 +580,11 @@ input::placeholder {
         font-size: 15px;
         padding: 0 20px;
     }
+
+    .newsletter-section,
     .choose-section,
     .destination-section,
-    .banner-section {
+    .banner-section, footer {
         padding: 0 20px;
     }
 
@@ -419,6 +592,11 @@ input::placeholder {
         padding: 0 20px;
         flex-direction: column;
         gap: 30px;
+    }
+
+    .newsletter-main-item {
+        flex-direction: column;
+        gap: 20px;
     }
 
     .popular-img img {
@@ -429,23 +607,44 @@ input::placeholder {
     .destination-img {
         flex-direction: column;
     }
+
     .banner-title,
     .popular-title,
     .destination-title,
-    .choose-section-title{
+    .choose-section-title {
         font-size: 30px;
     }
-    .choose-section-main-item{
+
+    .choose-section-main-item {
         grid-template-columns: 1fr;
     }
-    .choose-last-item .choose-item{
+
+    .choose-last-item .choose-item {
         width: 100%;
     }
+
+    .save-up {
+        font-size: 20px;
+    }
+
+    .travel-dot-com {
+        font-size: 15px;
+    }
+    footer .container {
+        padding: 30px 0;
+    }
+    .footer-line {
+        margin: 25px auto;
+       
+    }
+
 
 }
 
 
 @media screen and (min-width: 600px) and (max-width: 1200px) {
+
+    .newsletter-section,
     .choose-section,
     .destination-section,
     .popular-section,
@@ -454,12 +653,22 @@ input::placeholder {
         padding: 0 30px;
     }
 
-    form {
-        margin: 0px 65px;
+    .banner-section form {
+        grid-template-columns: 1fr;
+        width: 70%;
+        margin: 0 auto;
+        padding: 10px 10px;
+        gap: 15px;
     }
 
+    .newsletter-title,
     .popular-section {
         text-align: center;
+    }
+
+    .newsletter-main-item {
+        flex-direction: column;
+        gap: 20px;
     }
 
     .popular-main-item {
@@ -468,5 +677,14 @@ input::placeholder {
 
     .popular-main-item ul li {
         list-style: none;
+    }
+
+    .newsletter-section form {
+        margin: 0 auto;
+    }
+
+    .newsletter-description {
+        margin: 10px auto;
+        text-align: center;
     }
 }
