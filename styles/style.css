@@ -3,10 +3,6 @@
 /* inter-font */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
 
-/* font-family: 'Inter', sans-serif; */
-.hide {
-    display: none;
-}
 
 * {
     margin: 0;
@@ -499,6 +495,12 @@ select {
 
 /* simple-section */
 
+.simple-main-item {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
 .simple-title {
     color: #131318;
     font-size: 40px;
@@ -518,24 +520,30 @@ select {
     margin-bottom: 30px;
 }
 
+.simple-list-item li:last-child {
+    margin-top: 15px;
+}
+
 .simple-list-item li {
     color: #131318;
     font-size: 16px;
     font-weight: 700;
     line-height: 26px;
 }
-.simple-see-more{
+
+.simple-see-more {
     padding: 15px 40px;
 }
-.simple-video-item{
+
+.simple-video-item {
     position: relative;
     color: #FFF;
     font-size: 28px;
     font-weight: 800;
-    width: 50%;
     text-align: center;
 }
-video{
+
+video {
     border-radius: 15px;
 }
 
@@ -609,15 +617,15 @@ video{
     padding: 40px 50px;
 }
 
-/* .save {
-	border-radius: 16px;
-	background: #FF5400;
-	padding: 15px;
-	width: 320px;
-	position: absolute;
-	bottom: 62px;
-	transform: rotate(-25deg);
-	left: 348px;
+.save {
+    border-radius: 16px;
+    background: #FF5400;
+    padding: 15px;
+    width: 41%;
+    position: absolute;
+    bottom: 15%;
+    transform: rotate(-25deg);
+    left: 56%;
 }
 
 .travel-dot-com {
@@ -631,7 +639,8 @@ video{
     font-size: 32px;
     font-weight: 800;
     text-align: center;
-} */
+}
+
 .newsletter-img {
     position: relative;
 }
@@ -749,6 +758,7 @@ footer .fa-brands {
         padding: 0 20px;
     }
 
+    .simple-section,
     .discount-section,
     .newsletter-section,
     .choose-section,
@@ -769,15 +779,28 @@ footer .fa-brands {
         gap: 20px;
     }
 
+    .save {
+        border-radius: 16px;
+        background: #FF5400;
+        padding: 15px;
+        max-width: 35%;
+        position: absolute;
+        bottom: 12%;
+        transform: rotate(-25deg);
+        left: 60%;
+    }
+
     .popular-img img {
         width: 100%;
         object-fit: cover;
     }
 
+    .simple-main-item,
     .destination-img {
         flex-direction: column;
     }
 
+    .simple-title,
     .discount-title,
     .banner-title,
     .popular-title,
@@ -795,7 +818,7 @@ footer .fa-brands {
     }
 
     .save-up {
-        font-size: 20px;
+        font-size: 15px;
     }
 
     .travel-dot-com {
@@ -839,12 +862,22 @@ footer .fa-brands {
         padding: 35px;
     }
 
+    .simple-section video {
+        width: 100%;
+    }
+
+    .simple-video-item {
+        font-size: 20px;
+    }
+
 
 }
 
 
+
 @media screen and (min-width: 600px) and (max-width: 1200px) {
 
+    .simple-section,
     .discount-section,
     .newsletter-section,
     .choose-section,
@@ -863,6 +896,7 @@ footer .fa-brands {
         gap: 15px;
     }
 
+    .simple-content-item,
     .newsletter-title,
     .popular-section {
         text-align: center;
@@ -873,10 +907,12 @@ footer .fa-brands {
         gap: 20px;
     }
 
+    .simple-main-item,
     .popular-main-item {
         flex-direction: column;
     }
 
+    .simple-list-item li,
     .popular-main-item ul li {
         list-style: none;
     }
@@ -903,4 +939,16 @@ footer .fa-brands {
         justify-content: center;
         margin-left: 0;
     }
+
+    .save {
+        border-radius: 16px;
+        background: #FF5400;
+        padding: 15px;
+        width: 30%;
+        position: absolute;
+        bottom: 12%;
+        transform: rotate(-25deg);
+        left: 68%;
+    }
+
 }
