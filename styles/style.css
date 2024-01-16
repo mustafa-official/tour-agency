@@ -395,7 +395,7 @@ select {
 }
 
 .container-two {
-    background: url(../images/Group40.png);
+    background: url('../images/Group40.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
