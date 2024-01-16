@@ -808,7 +808,7 @@ footer .fa-brands {
     .choose-section-title {
         font-size: 30px;
     }
-
+    
     .choose-section-main-item {
         grid-template-columns: 1fr;
     }
@@ -868,6 +868,12 @@ footer .fa-brands {
 
     .simple-video-item {
         font-size: 20px;
+    }
+    .simple-title {
+        line-height: 42px;
+    }
+    .footer-site-logo .site-name {
+        font-size: 25px;
     }
 
 
