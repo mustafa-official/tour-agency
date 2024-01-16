@@ -4,6 +4,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
 
 /* font-family: 'Inter', sans-serif; */
+.hide {
+    display: none;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -372,6 +376,124 @@ select {
 }
 
 
+/* discount-section */
+
+.discount-container {
+    max-width: 1170px;
+    margin: 0 auto;
+    background: url('../images/Group39.png');
+    background-size: cover;
+    background-position: center;
+    padding: 55px 0px;
+    margin-top: 25px;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+}
+
+.discount-section-one-column {
+    display: flex;
+    justify-content: right;
+    margin-right: 55px;
+    
+
+}
+.container-two{
+    background: url(../images/Group40.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.discount-two-column{
+    justify-content: left;
+    margin-left: 55px;
+}
+
+.discount-main-item {
+    border-radius: 16px;
+    border: 2px solid #FFF;
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(2.5px);
+    padding: 50px;
+}
+
+.discount-price-item {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+
+}
+
+.discount-title {
+    color: #131318;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 24px;
+}
+
+.discount-description {
+    color: rgba(19, 19, 24, 0.70);
+    text-align: center;
+    font-size: 16px;
+    line-height: 26px;
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+.day,
+.max,
+.country {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.text-day {
+    color: #5A5A5D;
+    font-size: 16px;
+}
+
+.tour-place-name {
+    color: #131318;
+    font-size: 24px;
+    font-weight: 800;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.tour-place-description {
+    color: #5A5A5D;
+    font-size: 16px;
+    line-height: 26px;
+    max-width: 450px;
+}
+
+.tour-price {
+    color: #FF5400;
+    font-size: 20px;
+    font-weight: 800;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.tour-btn {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 800;
+    border-radius: 8px;
+    background: #FF5400;
+    padding: 14px 24px;
+    border: none;
+    cursor: pointer;
+}
+.discount-btn-container{
+    max-width: 1170px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 40px;
+}
+
+
 /* newsletter-section */
 
 .newsletter-main-item {
@@ -481,7 +603,8 @@ footer {
     background: rgba(19, 19, 24, 0.05);
     margin-top: 80px;
 }
-footer .container{
+
+footer .container {
     padding: 80px 0;
 }
 
@@ -527,7 +650,7 @@ footer .fa-brands {
     border: none;
     height: 1px;
     background: rgba(19, 19, 24, 0.10);
-    margin:50px auto;
+    margin: 50px auto;
     max-width: 870px;
 }
 
@@ -580,11 +703,12 @@ footer .fa-brands {
         font-size: 15px;
         padding: 0 20px;
     }
-
+    .discount-section,
     .newsletter-section,
     .choose-section,
     .destination-section,
-    .banner-section, footer {
+    .banner-section,
+    footer {
         padding: 0 20px;
     }
 
@@ -630,12 +754,36 @@ footer .fa-brands {
     .travel-dot-com {
         font-size: 15px;
     }
+
     footer .container {
         padding: 30px 0;
     }
+
     .footer-line {
         margin: 25px auto;
-       
+
+    }
+    .discount-section-one-column{
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 0;
+    }
+    .discount-two-column{
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 0;
+    }
+    .discount-price-item{
+        flex-wrap: wrap;
+    }
+    .discount-container{
+        border-radius: 15px;
+    }
+    .discount-section-one-column{
+        padding: 20px;
+    }
+    .discount-main-item{
+        padding: 35px;
     }
 
 
@@ -643,7 +791,7 @@ footer .fa-brands {
 
 
 @media screen and (min-width: 600px) and (max-width: 1200px) {
-
+    .discount-section,
     .newsletter-section,
     .choose-section,
     .destination-section,
@@ -686,5 +834,16 @@ footer .fa-brands {
     .newsletter-description {
         margin: 10px auto;
         text-align: center;
+    }
+    .discount-container{
+        border-radius: 15px;
+    }
+    .discount-section-one-column{
+        justify-content: center;
+        margin-right: 0;
+    }
+    .discount-two-column{
+        justify-content: center;
+        margin-left: 0;
     }
 }
