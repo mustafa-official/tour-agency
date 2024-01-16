@@ -394,16 +394,18 @@ select {
     display: flex;
     justify-content: right;
     margin-right: 55px;
-    
+
 
 }
-.container-two{
+
+.container-two {
     background: url(../images/Group40.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.discount-two-column{
+
+.discount-two-column {
     justify-content: left;
     margin-left: 55px;
 }
@@ -486,13 +488,56 @@ select {
     border: none;
     cursor: pointer;
 }
-.discount-btn-container{
+
+.discount-btn-container {
     max-width: 1170px;
     margin: 0 auto;
     text-align: center;
     margin-top: 40px;
 }
 
+
+/* simple-section */
+
+.simple-title {
+    color: #131318;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 60px;
+}
+
+.simple-description {
+    color: #5A5A5D;
+    font-size: 16px;
+    line-height: 26px;
+    margin: 20px 0;
+}
+
+.simple-list-item {
+    margin-left: 15px;
+    margin-bottom: 30px;
+}
+
+.simple-list-item li {
+    color: #131318;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+}
+.simple-see-more{
+    padding: 15px 40px;
+}
+.simple-video-item{
+    position: relative;
+    color: #FFF;
+    font-size: 28px;
+    font-weight: 800;
+    width: 50%;
+    text-align: center;
+}
+video{
+    border-radius: 15px;
+}
 
 /* newsletter-section */
 
@@ -703,6 +748,7 @@ footer .fa-brands {
         font-size: 15px;
         padding: 0 20px;
     }
+
     .discount-section,
     .newsletter-section,
     .choose-section,
@@ -732,6 +778,7 @@ footer .fa-brands {
         flex-direction: column;
     }
 
+    .discount-title,
     .banner-title,
     .popular-title,
     .destination-title,
@@ -763,26 +810,32 @@ footer .fa-brands {
         margin: 25px auto;
 
     }
-    .discount-section-one-column{
+
+    .discount-section-one-column {
         flex-direction: column;
         justify-content: center;
         margin-right: 0;
     }
-    .discount-two-column{
+
+    .discount-two-column {
         flex-direction: column;
         justify-content: center;
         margin-left: 0;
     }
-    .discount-price-item{
+
+    .discount-price-item {
         flex-wrap: wrap;
     }
-    .discount-container{
+
+    .discount-container {
         border-radius: 15px;
     }
-    .discount-section-one-column{
+
+    .discount-section-one-column {
         padding: 20px;
     }
-    .discount-main-item{
+
+    .discount-main-item {
         padding: 35px;
     }
 
@@ -791,6 +844,7 @@ footer .fa-brands {
 
 
 @media screen and (min-width: 600px) and (max-width: 1200px) {
+
     .discount-section,
     .newsletter-section,
     .choose-section,
@@ -835,14 +889,17 @@ footer .fa-brands {
         margin: 10px auto;
         text-align: center;
     }
-    .discount-container{
+
+    .discount-container {
         border-radius: 15px;
     }
-    .discount-section-one-column{
+
+    .discount-section-one-column {
         justify-content: center;
         margin-right: 0;
     }
-    .discount-two-column{
+
+    .discount-two-column {
         justify-content: center;
         margin-left: 0;
     }
